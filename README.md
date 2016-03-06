@@ -1,0 +1,2 @@
+# confmangr
+Config manager
