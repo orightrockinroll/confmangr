@@ -1,0 +1,17 @@
+<eBrochure>	
+  <fbConfigSrc>configCurrys.xml</fbConfigSrc>	
+  <fbWidth>1024</fbWidth>	
+  <fbHeight>647</fbHeight>	
+  <firstPage>0</firstPage>	
+  <firstPageUrl>pages/pLoBC.jpg</firstPageUrl>	
+  <firstPageHiUrl>pages/pMeBC.jpg</firstPageHiUrl>	
+  <reverseFlip>false</reverseFlip>	
+  <debug>true</debug>      
+  <showInfoButton>false</showInfoButton>
+  <initialLoading>10</initialLoading>  
+  <easeProduct>true</easeProduct>
+  <productTransition>Regular.easeOut</productTransition>
+  <easeBrochure>true</easeBrochure>
+  <brochureTransition>Regular.easeOut</brochureTransition>
+  <allowScript>true</allowScript>
+</eBrochure>

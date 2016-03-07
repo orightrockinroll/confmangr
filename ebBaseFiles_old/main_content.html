@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Currys eBrochure</title>
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript" src="CookieHandler.js"></script>
+<script type="text/javascript" src="PopupController.js"></script>
+<!--<script type="text/javascript" src="shortcuts.js"></script>-->
+<script type="text/javascript">
+	//var popup_window;
+	var browser = navigator.appName.toLowerCase();
+    var isMovieLoaded = false;	
+    var tOut;
+	
+    
+	function hidePreloader() {
+		//alert("hidePreloader");
+		document.getElementById('flashcontentPreloader').style.visibility='hidden';
+		document.getElementById('flashcontentLoadingTxt').style.visibility='hidden';
+	}
+
+	function MM_openBrWindow(theURL,winName,w,h)	{
+	 
+	  w=parseInt(w);
+	  h=parseInt(h);
+	  LeftPosition=(screen.width)?(screen.width-w)/2:400;
+	  TopPosition=(screen.height)?(screen.height-h)/2:300;
+
+      settings='width='+w+',height='+h+',top='+TopPosition+',left='+LeftPosition+',scrollbars=yes,directories=no,status=0,menubar=no,toolbar=no,resizable=false';
+	  URL = theURL;
+	  /*if (popup_window) {
+	  	//if (popup_window.closed) alert('closed'); //closed hangs IE!
+	  	popup_window.location.href = URL;
+	  }
+	  else*/
+	  var popup_window = window.open(URL, winName, settings);
+	      popup_window.focus();
+
+
+//	  popup_window.document.write('<html><head><title>URL link popup</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">');
+//	  popup_window.document.write('</head><body onunload="alert();">');
+//	  popup_window.document.write('</body></html>');
+
+	  //var numTimerId_focus = setTimeout('popup_window.onUnload = body_onUnload()',1500);
+	  //popup_window.onUnload = body_onUnload(popup_window.event); //triggers every href change: unload current href to load new href value
+	}
+	
+	function getFlashMovieObject(movieName)	{
+	
+	  if (window.document[movieName]) {     	        
+		return window.document[movieName];
+	  }	  
+	  if (navigator.appName.indexOf("Microsoft Internet")==-1) {
+		if (document.embeds && document.embeds[movieName])	  		   
+		  return document.embeds[movieName]; 
+	  }
+	  else // if (navigator.appName.indexOf("Microsoft Internet")!=-1)
+	  {	  	      
+		return document.getElementById(movieName);
+	  }
+	}
+		
+	function myEBrochure() {
+       /*
+		var soEBrochure = new SWFObject("eBrochure.swf", "swfEBrochure", "1024", "720", "8", "");
+		soEBrochure.addParam("allowScriptAccess","always");
+		soEBrochure.addParam("menu","false");
+		soEBrochure.addParam("quality","best");
+		soEBrochure.addParam("play","false");
+		soEBrochure.write("flashcontentEBrochure");
+		*/
+
+		var flashVars = {};
+	    var params = {}; 
+		    params.allowFullScreen = "true";
+		    params.menu = "true";
+			params.play = "true";	
+			params.loop = "true";				
+			params.quality = "best";
+			params.wmode = "window";
+			params.bgcolor = "#0C1B3C";
+			params.align = "middle";
+			params.allowscriptaccess = "sameDomain";		
+		var attributes = {};				
+		swfobject.embedSWF("eBrochure.swf", "swfEBrochure", "1024", "720", "9.0.0", "expressInstall.swf", flashVars, params, attributes);		
+		
+	
+	}
+	
+    function showHideDiv() {
+        
+   		var div = document.getElementById("flashDiv");			   
+		if (div != null) {
+		   div.style.visibility = "hidden";
+		   div.style.width = "0px";
+		   div.style.height = "0px";
+		  //div.style.z-index = 0;
+	    } 
+
+		//var div2 = document.getElementById("flashcontentEBrochure");		    
+		var div2 = document.getElementById("swfEBrochure");		    		
+		if (div2 != null) {
+		   div2.style.visibility = "visible";
+		   div2.style.width = "1024px";
+		   div2.style.height = "720px";
+		   //div2.style.z-index = -1;			  			   
+		 }
+	}
+	
+	function triggerOnClick() {
+       
+	    if (isMovieLoaded == false) {
+			var btnPlay = document.getElementById("myPlayBtn");
+
+			if (btnPlay != null) {			 
+			   btnPlay.onclick = function (){ 
+			     showHideDiv();
+ 				 document.swfEBrochure.Play();
+			   }
+			 btnPlay.onclick();
+		   }
+            isMovieLoaded = true;
+		}
+    }
+	
+	function playMovie() {
+	    var eb = getFlashMovieObject("swfEBrochure");			    
+		eb.Play();
+	}
+	
+    function divPosition() {
+	   var divPos = document.getElementById("swfEBrochure");
+	   if (divPos != null) {
+	   
+	     var lPos = (screen.width-1024)/2;		
+		 divPos.style.left = lPos+"px";
+		 
+		 var tPos = (screen.height-720)/2;
+		 divPos.style.top = tPos+"px";
+	   }	
+	}
+
+    function reloadMain_Content() {
+	  window.location.reload();
+    }
+
+    /*
+     if (readCookie("isMainContentLoaded") == null || readCookie("isMainContentLoaded") == false) {
+	   
+       tOut = setTimeout("reloadMain_Content()",5000);	     
+	 
+	   createCookie("isMainContentLoaded","true",60000);
+	 } else {  
+	   clearTimeout(tOut);
+	   eraseCookie("isMainContentLoaded");
+    }
+   */
+ 
+</script>
+
+<style type="text/css">
+
+	body {
+		background-color: #0C1B3C;
+		font: .8em/1.3em verdana,arial,helvetica,sans-serif;
+		overflow: hidden; /*hidding scrollbar for chrome alone*/
+	}
+
+	#info {
+		width: 300px;
+		/*overflow: auto;*/
+	}
+
+	#flashcontent {
+	}
+
+	#swfEBrochure {
+		position: absolute;
+		width: 1024px;
+	    height: 720px; 		
+		visibility: visible;
+		border: none;		
+	}
+</style>
+</head>
+
+<body onload="myEBrochure();playMovie();" style="background-color:#0C1B3C; margin-top:0px;margin-left:0px;">
+<form name="f2"></form>
+    
+    <div id="swfEBrochure"/>
+</body>
+</html>

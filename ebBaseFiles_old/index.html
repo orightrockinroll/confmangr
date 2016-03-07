@@ -1,0 +1,86 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Currys eBrochure</title>
+<script type="text/javascript" src="CookieHandler.js"></script>
+<script type="text/javascript" src="PopupController.js"></script>
+<script language='JavaScript'>
+	var intCenterH = (screen.width/2);
+	var intCenterV = (screen.height/2);
+	
+	createCookie("reloadCtr","1",60000);
+	createCookie("reloadLimit","0:08",60000);
+
+	function centerLogo() {
+			var intLogoCenterH = intCenterH - 185;
+			var intLogoCenterV = intCenterV - 52;
+			document.getElementById('logo').style.left = intLogoCenterH;
+			document.getElementById('logo').style.top = 300; //intLogoCenterV;
+			document.getElementById('logo').style.visibility='visible';
+	}
+
+
+        var sessionTimeout = 3;
+
+        function DisplaySessionTimeout()
+        {
+            //assigning minutes left to session timeout to Label
+            document.getElementById("lblSessionTime").innerText = sessionTimeout;
+            sessionTimeout = sessionTimeout - 1;
+
+            //if session is not less than 0
+            if (sessionTimeout >= 0)
+                //call the function again after 1 minute delay
+                window.setTimeout("DisplaySessionTimeout()", 60000);
+            else
+            {
+                //show message box
+                alert("Your current Session is over.");
+            }
+        }
+
+		   function getXpydionLogo() {
+		     window.location.href = "http://www.xpydion.com/SlidingCover/index.html";
+		     //window.location.reload();
+		   }
+
+    function divPosition() {
+	   var divPos = document.getElementById("logo");
+
+	   if (divPos != null) {
+	     var lPos = (screen.width-1024)/2;
+		 divPos.style.left = lPos+"px";
+	   }
+
+	}
+
+    function cleanUpCookies() {
+	   eraseCookie("isMainContentLoaded");
+       //eraseCookie("reloadLimit");
+       //eraseCookie("reloadCtr");	   
+	}
+</script>
+
+</head>
+<body bgcolor="#ffffff" onLoad="divPosition();cleanUpCookies();">
+<script language="JavaScript" src="snow.js"></script>
+<!--url's used in the movie-->
+<!--text used in the movie-->
+<!--<p align="center"><font face="Arial" size="11" color="#000000" letterSpacing="0.000000" kerning="1">0 / 1</font></p>-->
+<!--<input id="lblSessionTime" type="text" value="session..."/>-->
+
+<form method="post" action="" name="f1">
+<!--<input type="text" name="sessionState" value="?" size="8"/> -->
+
+	<div id='logo' align="center" style='position:absolute; width:1024px; top:240px; visibility:visible'>
+		<!-- saved from url=(0013)about:internet -->
+        <!--
+		<A HREF='#' onClick='popupWin(); return;' target="_self"><IMG SRC='xpydionLogo.jpg' WIDTH='371px' HEIGHT='105px' BORDER=0></A>
+		<P ALIGN='center'><A HREF='#' onClick='popupWin(); return;' target="_self"><font color='#660066'><B>Launch Currys eBrochure.</B></font></A></P>
+        -->
+		<A HREF='#' onClick="javascript:customPopupWindow('main.html','myEb_0','1024','720'); return false;"><IMG id="myLogo" SRC='xpydionLogo.jpg' WIDTH='371px' HEIGHT='105px' BORDER=0></A>       
+<P ALIGN='center'><A id="popupId" HREF='#' onClick="javascript:customPopupWindow('main.html','myEb_0','1024','720'); return false;"><font color='#660066' size="+2"><B>Click here.</B></font></A></P>
+ 	</div>
+  </form>
+</body>
+</html>

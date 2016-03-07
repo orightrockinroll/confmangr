@@ -1,0 +1,118 @@
+<FlippingBook>
+	<scaleContent>true</scaleContent>
+	<firstPage>0</firstPage>
+	<alwaysOpened> false </alwaysOpened>
+	<autoFlip> 60 </autoFlip>
+	<flipOnClick> false </flipOnClick>
+
+	<staticShadowsDepth> 1 </staticShadowsDepth>
+	<dynamicShadowsDepth> 1 </dynamicShadowsDepth>
+
+	<moveSpeed> 7 </moveSpeed>
+	<closeSpeed> 7 </closeSpeed>
+	<gotoSpeed> 7 </gotoSpeed>
+
+	<flipSound> 01.mp3 </flipSound>
+	<pageBack> 0xFFFFFF </pageBack>
+
+	<loadOnDemand>true</loadOnDemand>
+	<cachePages>true</cachePages>
+
+   	<cacheSize> 76 </cacheSize>
+	<preloaderType> None </preloaderType>
+	<userPreloaderId></userPreloaderId>
+
+	<reverseFlip>false</reverseFlip>
+	<debug>true</debug>
+	<linkMode>true</linkMode>
+	<pageStat>false</pageStat>
+
+	<pages>			
+		<page>page.swf?imgLoRes=pages/pLoBC.jpg&imgMedRes=pages/pMeBC.jpg&imgHiRes=pages/pHiBC.jpg</page>		
+		<page>page.swf?imgLoRes=pages/pLo2.jpg&imgMedRes=pages/pMe2.jpg&imgHiRes=pages/pHi2.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo3.jpg&imgMedRes=pages/pMe3.jpg&imgHiRes=pages/pHi3.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo4.jpg&imgMedRes=pages/pMe4.jpg&imgHiRes=pages/pHi4.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo5.jpg&imgMedRes=pages/pMe5.jpg&imgHiRes=pages/pHi5.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo6.jpg&imgMedRes=pages/pMe6.jpg&imgHiRes=pages/pHi6.jpg&xml=pages6.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo7.jpg&imgMedRes=pages/pMe7.jpg&imgHiRes=pages/pHi7.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo8.jpg&imgMedRes=pages/pMe8.jpg&imgHiRes=pages/pHi8.jpg&xml=pages8.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo9.jpg&imgMedRes=pages/pMe9.jpg&imgHiRes=pages/pHi9.jpg</page>
+		
+		<page>page.swf?imgLoRes=pages/pLo10.jpg&imgMedRes=pages/pMe10.jpg&imgHiRes=pages/pHi10.jpg&xml=pages10.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo11.jpg&imgMedRes=pages/pMe11.jpg&imgHiRes=pages/pHi11.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo12.jpg&imgMedRes=pages/pMe12.jpg&imgHiRes=pages/pHi12.jpg&xml=pages12.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo13.jpg&imgMedRes=pages/pMe13.jpg&imgHiRes=pages/pHi13.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo14.jpg&imgMedRes=pages/pMe14.jpg&imgHiRes=pages/pHi14.jpg&xml=pages14.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo15.jpg&imgMedRes=pages/pMe15.jpg&imgHiRes=pages/pHi15.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo16.jpg&imgMedRes=pages/pMe16.jpg&imgHiRes=pages/pHi16.jpg&xml=pages16.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo17.jpg&imgMedRes=pages/pMe17.jpg&imgHiRes=pages/pHi17.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo18.jpg&imgMedRes=pages/pMe18.jpg&imgHiRes=pages/pHi18.jpg&xml=pages18.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo19.jpg&imgMedRes=pages/pMe19.jpg&imgHiRes=pages/pHi19.jpg</page>
+		
+		<page>page.swf?imgLoRes=pages/pLo20.jpg&imgMedRes=pages/pMe20.jpg&imgHiRes=pages/pHi20.jpg&xml=pages20.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo21.jpg&imgMedRes=pages/pMe21.jpg&imgHiRes=pages/pHi21.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo22.jpg&imgMedRes=pages/pMe22.jpg&imgHiRes=pages/pHi22.jpg&xml=pages22.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo23.jpg&imgMedRes=pages/pMe23.jpg&imgHiRes=pages/pHi23.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo24.jpg&imgMedRes=pages/pMe24.jpg&imgHiRes=pages/pHi24.jpg&xml=pages24.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo25.jpg&imgMedRes=pages/pMe25.jpg&imgHiRes=pages/pHi25.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo26.jpg&imgMedRes=pages/pMe26.jpg&imgHiRes=pages/pHi26.jpg&xml=pages26.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo27.jpg&imgMedRes=pages/pMe27.jpg&imgHiRes=pages/pHi27.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo28.jpg&imgMedRes=pages/pMe28.jpg&imgHiRes=pages/pHi28.jpg&xml=pages28.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo29.jpg&imgMedRes=pages/pMe29.jpg&imgHiRes=pages/pHi29.jpg</page>
+		
+		<page>page.swf?imgLoRes=pages/pLo30.jpg&imgMedRes=pages/pMe30.jpg&imgHiRes=pages/pHi30.jpg&xml=pages30.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo31.jpg&imgMedRes=pages/pMe31.jpg&imgHiRes=pages/pHi31.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo32.jpg&imgMedRes=pages/pMe32.jpg&imgHiRes=pages/pHi32.jpg&xml=pages32.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo33.jpg&imgMedRes=pages/pMe33.jpg&imgHiRes=pages/pHi33.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo34.jpg&imgMedRes=pages/pMe34.jpg&imgHiRes=pages/pHi34.jpg&xml=pages34.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo35.jpg&imgMedRes=pages/pMe35.jpg&imgHiRes=pages/pHi35.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo36.jpg&imgMedRes=pages/pMe36.jpg&imgHiRes=pages/pHi36.jpg&xml=pages36.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo37.jpg&imgMedRes=pages/pMe37.jpg&imgHiRes=pages/pHi37.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo38.jpg&imgMedRes=pages/pMe38.jpg&imgHiRes=pages/pHi38.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo39.jpg&imgMedRes=pages/pMe39.jpg&imgHiRes=pages/pHi39.jpg</page>
+		
+		<page>page.swf?imgLoRes=pages/pLo40.jpg&imgMedRes=pages/pMe40.jpg&imgHiRes=pages/pHi40.jpg&xml=pages40.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo41.jpg&imgMedRes=pages/pMe41.jpg&imgHiRes=pages/pHi41.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo42.jpg&imgMedRes=pages/pMe42.jpg&imgHiRes=pages/pHi42.jpg&xml=pages42.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo43.jpg&imgMedRes=pages/pMe43.jpg&imgHiRes=pages/pHi43.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo44.jpg&imgMedRes=pages/pMe44.jpg&imgHiRes=pages/pHi44.jpg&xml=pages44.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo45.jpg&imgMedRes=pages/pMe45.jpg&imgHiRes=pages/pHi45.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo46.jpg&imgMedRes=pages/pMe46.jpg&imgHiRes=pages/pHi46.jpg&xml=pages46.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo47.jpg&imgMedRes=pages/pMe47.jpg&imgHiRes=pages/pHi47.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo48.jpg&imgMedRes=pages/pMe48.jpg&imgHiRes=pages/pHi48.jpg</page>
+
+		<page>page.swf?imgLoRes=pages/pLo49.jpg&imgMedRes=pages/pMe49.jpg&imgHiRes=pages/pHi49.jpg</page>
+		
+		<page>page.swf?imgLoRes=pages/pLo50.jpg&imgMedRes=pages/pMe50.jpg&imgHiRes=pages/pHi50.jpg&xml=pages50.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo51.jpg&imgMedRes=pages/pMe51.jpg&imgHiRes=pages/pHi51.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo52.jpg&imgMedRes=pages/pMe52.jpg&imgHiRes=pages/pHi52.jpg&xml=pages52.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo53.jpg&imgMedRes=pages/pMe53.jpg&imgHiRes=pages/pHi53.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo54.jpg&imgMedRes=pages/pMe54.jpg&imgHiRes=pages/pHi54.jpg&xml=pages54.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo55.jpg&imgMedRes=pages/pMe55.jpg&imgHiRes=pages/pHi55.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo56.jpg&imgMedRes=pages/pMe56.jpg&imgHiRes=pages/pHi56.jpg&xml=pages56.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo57.jpg&imgMedRes=pages/pMe57.jpg&imgHiRes=pages/pHi57.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo58.jpg&imgMedRes=pages/pMe58.jpg&imgHiRes=pages/pHi58.jpg&xml=pages58.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo59.jpg&imgMedRes=pages/pMe59.jpg&imgHiRes=pages/pHi59.jpg</page>
+		
+		<page>page.swf?imgLoRes=pages/pLo60.jpg&imgMedRes=pages/pMe60.jpg&imgHiRes=pages/pHi60.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo61.jpg&imgMedRes=pages/pMe61.jpg&imgHiRes=pages/pHi61.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo62.jpg&imgMedRes=pages/pMe62.jpg&imgHiRes=pages/pHi62.jpg&xml=pages62.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo63.jpg&imgMedRes=pages/pMe63.jpg&imgHiRes=pages/pHi63.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo64.jpg&imgMedRes=pages/pMe64.jpg&imgHiRes=pages/pHi64.jpg&xml=pages64.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo65.jpg&imgMedRes=pages/pMe65.jpg&imgHiRes=pages/pHi65.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo66.jpg&imgMedRes=pages/pMe66.jpg&imgHiRes=pages/pHi66.jpg&xml=pages66.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo67.jpg&imgMedRes=pages/pMe67.jpg&imgHiRes=pages/pHi67.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo68.jpg&imgMedRes=pages/pMe68.jpg&imgHiRes=pages/pHi68.jpg&xml=pages68.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo69.jpg&imgMedRes=pages/pMe69.jpg&imgHiRes=pages/pHi69.jpg</page>
+		
+		<page>page.swf?imgLoRes=pages/pLo70.jpg&imgMedRes=pages/pMe70.jpg&imgHiRes=pages/pHi70.jpg&xml=pages70.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo71.jpg&imgMedRes=pages/pMe71.jpg&imgHiRes=pages/pHi71.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo72.jpg&imgMedRes=pages/pMe72.jpg&imgHiRes=pages/pHi72.jpg&xml=pages72.xml</page>
+		<page>page.swf?imgLoRes=pages/pLo73.jpg&imgMedRes=pages/pMe73.jpg&imgHiRes=pages/pHi73.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo74.jpg&imgMedRes=pages/pMe74.jpg&imgHiRes=pages/pHi74.jpg</page>
+		<page>page.swf?imgLoRes=pages/pLo75.jpg&imgMedRes=pages/pMe75.jpg&imgHiRes=pages/pHi75.jpg</page>
+
+		
+		<page>page.swf?imgLoRes=pages/pLoFC.jpg&imgMedRes=pages/pMeFC.jpg&imgHiRes=pages/pHiFC.jpg</page>	
+	</pages>
+</FlippingBook>

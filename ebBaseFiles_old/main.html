@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Currys eBrochure</title>
+<script type="text/javascript" src="CookieHandler.js"></script>
+<script type="text/javascript" src="PopupController.js"></script>
+<script type="text/javascript">
+	var browser = navigator.appName.toLowerCase();
+    var isMovieLoaded = false;   
+	
+    createCookie("isMainContentLoaded","false",60000);
+	
+    function divPosition() {
+	   var divPos = document.getElementById("mainDiv");
+	   if (divPos != null) {
+	      divPos.style.top = "0px";
+  	      divPos.style.left = "0px";
+	    // var lPos = (screen.width-1024)/2;
+		 //alert("left: " + lPos);
+		// divPos.style.left = lPos+"px";
+
+		// var tPos = (screen.height-720)/2;
+		    //    alert("screen.height:" + screen.height);
+		 	//	 alert("top: " + tPos);
+		// divPos.style.top = tPos+"px";
+	   }
+	}
+      
+	//Checking: if Cookie == null
+	/*
+	function checkEmptyCookies() {
+	   
+	   if (readCookie("isMainContentLoaded") == null) {
+	      window.close();
+		  alert("window close");
+	   }	  
+	}
+	
+	setTimeout("checkEmptyCookies()",5000);
+   */
+
+   
+
+</script>
+<script>
+<!--
+
+//enter refresh time in "minutes:seconds"
+//var limit="0:05"
+var limit = readCookie("reloadLimit");
+var rCtr = readCookie("reloadCtr");
+//alert("Reset duration: 8 and 15secs");
+if (document.images){
+   var parselimit=limit.split(":")   
+   parselimit=parselimit[0]*60+parselimit[1]*1
+}
+function beginrefresh(){
+   if (!document.images)
+     return
+   if (parselimit==1 && readCookie("isMainContentLoaded")=="false") {         
+       
+	   var ctr = rCtr;
+	   if (ctr == 1) {		   
+		   createCookie("reloadCtr","2",60000)
+           createCookie("reloadLimit","0:15",60000)		   
+	    //} else if (ctr == 2) { 	       
+  		//   createCookie("reloadCtr","0",60000)
+        //   createCookie("reloadLimit","0:15",60000)		   
+		 }else { 
+		   createCookie("reloadCtr","1",60000)
+           createCookie("reloadLimit","0:08",60000)		   
+		 }		
+       //alert("Duration: " + limit);		 
+     window.location.reload()
+	 	 
+   } else{ 
+     parselimit-=1
+     curmin=Math.floor(parselimit/60)
+     cursec=parselimit%60
+   if (curmin!=0)
+     curtime=curmin+" minutes and "+cursec+" seconds left until page refresh!"
+   else
+     curtime=cursec+" seconds left until page refresh!"
+     window.status=curtime
+     setTimeout("beginrefresh()",1000)
+   }
+}
+
+function writeDocumentMessage() {
+  var newContent = "<HTML><HEAD><TITLE>A New Doc</TITLE></HEAD>"
+    newContent += "<BODY BGCOLOR='coral'><H1>This document is brand new.</H1>"
+    newContent += "</BODY></HTML>"
+    window.document.write(newContent)
+    window.document.close()
+}
+
+window.onload=beginrefresh
+//-->
+</script>
+
+<style type="text/css">
+
+	body {
+		background-color: #0C1B3C;
+		font: .8em/1.3em verdana,arial,helvetica,sans-serif;
+		overflow: hidden; /*hidding scrollbar for chrome alone*/
+	}
+
+	#info {
+		width: 300px;
+		/*overflow: auto;*/
+	}
+
+	#flashcontent {
+	}
+
+	#mainDiv {
+		position: absolute;
+		width: 1024px;
+	    height: 720px;
+		visibility: visible;
+		border: 0px none #000000;	
+		top:0px;
+		left:0px;	
+	}
+	#iframe {
+      border: 0px none #000000;
+    }
+</style>
+</head>
+<body style="background-color:#0C1B3C;">
+<!--<script language="JavaScript" src="snow.js"></script>-->
+  <input type="button" onClick="javascript:closedFullsreen('winEb_0');" value="Close" align="left" style="visibility:hidden;"/>
+   
+     <div id="mainDiv">
+        <!--<IMG id="myLoader" src='loader.gif' align="middle" height="100" width="100"/>-->
+       <iframe id="myIframe" src="main_content.html" allowtransparency="true" frameborder="#" scrolling="no" style="width:1024px; height:720px;"/>
+    </div>
+   
+</body>
+
+</html>
